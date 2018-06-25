@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    display: grid;
+    grid-template: 0.1fr 1fr 1fr 0.1fr / repeat(12, 1fr);
+}
+
+.header {
+    display: grid;
+    grid-template: none/ repeat(12, 1fr);
+    grid-column: 1 / -1;
+    grid-gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #3a3042;
+    font-family: "Press Start 2P";
+}
+.header h1 {
+    grid-column: 2 / 12;
+    color: white;
+    font-size: 20px;
+}
+.header h2 {
+    grid-column: 2/ -1;
+    color: white;
+    font-size: 10px;
+}
+
+
+.projects {
+    /*display: grid;*/
+    /*grid-template: auto / repeat(12, 1fr);*/
+    grid-column: 1/-1;
+    padding-bottom: 10px;
+    font-family: "Press Start 2P";
+    background-color: #17b890;
+    color: #fed766;
+}
+.projects h3 {
+    margin-top: 30px;
+    grid-column: 1/-1;
+    font-size: 10px;
+    text-align: center;
+}
+.projects p {
+    grid-column: 1/-1;
+    margin-top: 20px;
+    font-size: 8px;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+
+.developers {
+    grid-column: 1/-1;
+    background-color: #FB4D3D;
+    color: #191919;
+    font-family: "Press Start 2P";
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.developers h3 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 10px;
+}
+.developers p {
+    text-align: center;
+    font-size: 8px;
+    margin-top: 20px;
+}
+
+footer {
+    grid-template: 1fr / repeat(12, 1fr);
+    grid-column: 1/-1;
+    font-family: "Press Start 2P";
+    background-color: #3a3042;
+    color: white;
+    padding: 10px;
+}
+footer p{
+    font-size: 10px;
+}
